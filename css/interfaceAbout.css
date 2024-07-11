@@ -1,0 +1,131 @@
+/* Adjusting image size and other properties */
+.aboutusinterface{
+    margin-top: 15vh;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: #333;
+    z-index: 0;
+}
+.aboutus_img {
+    margin-top: 5vh;
+    height: 88%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(1,3,4,5,0.3);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    z-index: 0;
+}
+
+.aboutusinterface h2 {
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 10vh;
+    top: 0%;
+    left: 0%;
+    display: flex; /* Use flexbox */
+    background: rgba(2, 3, 4, 0.4); /* Semi-transparent background color */
+    align-items: center; /* Center vertically */
+    color: #333;
+    font-size: 20px;
+    padding-left: 2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+    backdrop-filter: blur(5px); /* Apply a blur effect */
+}
+
+
+.aboutusinterface h2::after {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Position the line absolutely */
+    bottom: -2%; /* Align the line to the bottom of the h4 element */
+    left: 0; /* Align the line to the left side */
+    width: 100%; /* Make the line full width */
+    height: 1px; /* Set the height of the line */
+    background-color: white;
+     /* Set the color of the line */
+   
+}
+.aboutus_img .persons {
+    position: relative;
+    height: 80%;
+    width: 20%;
+    background-color: transparent;
+    display: flex;
+    transition: width 0.5s ease-in;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px white;
+}
+
+
+.aboutus_img .persons .imgbox {
+    border-radius: 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17, 18, 18);
+    z-index: 10;
+    transition: width 0.5s ease-in;
+    display: flex;
+    align-items: center; /* Added to center image vertically */
+    justify-content: center; /* Added to center image horizontally */
+}
+
+.aboutus_img .persons .imgbox img {
+    border-radius: 20px;
+    height: 100%; /* Changed to max-height */
+    width: 100%; /* Changed to max-width */
+   /* Added to maintain aspect ratio */
+}
+
+.aboutus_img .persons .person_details {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    padding: 1em 2em;
+    transition: position 1s ease-in;
+    z-index: 0;
+    width: 0; /* Initially hidden */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.aboutus_img .persons .person_details p {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    padding: 5px 5px;
+    letter-spacing: 1px;
+    flex-wrap:wrap;
+    color: white;
+    border: 1px solid rgb(118, 115, 115);
+}
+.aboutus_img .persons:hover .person_details {
+    position: relative;
+    width: 50%; /* Adjusted width on hover */
+    transition: width 0.5s ease-in; /* Added transition */
+}
+
+.aboutus_img .persons:hover {
+    width: 50%;
+    gap: 1em;
+    transition: width 0.5s ease-in; /* Added transition */
+}
+
+.aboutus_img .persons:hover .imgbox {
+    width: 45%;
+    transition: width 0.5s ease-in; /* Added transition */
+}

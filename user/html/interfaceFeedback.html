@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/interface.css" />
+    <link rel="stylesheet" href="../../css/interfaceSection.css">
+    <link rel="stylesheet" href="../../css/registerloginForm.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/feedback.css">
+    <link rel="shortcut icon" href="Untitled-1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- logo ..................................................... -->
+      <div class="logo">
+      </div>
+      <!--  other service .................................................... -->
+      <nav>
+        <div class="icon"> <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <ul class="list_content">
+          <li class="LI" id="home"><a href="./interfacee.html">home</a></li>
+          <li class="LI" id="service"><a href="./interfaceService.html">service</a></li>
+          <li class="LI" id="feedback"><a href="./interfaceFeedback.html">feedback</a></li>
+          <li class="LI" id="feedback"><a href="#aboutus">Aboutus</a></li>
+        </ul>
+        <div class="content">
+          <a class="button" href="../loginregister.php" id="btn">
+            <ion-icon name="person-outline"></ion-icon>login/register
+          </a>
+        </div>
+      </nav>
+      <!-- design for login and register........................................... -->
+      
+    </header>
+<main id="page" class="fpage">
+  <div class="feedbackbox">
+    <div class="massege"></div>
+  </div>
+</main>
+<footer>
+  <div class="box">
+    <a href="tel:1234567890"><i class="fas fa-phone"></i><span>9898988888</span></a>
+    <a href="tel:1112223333"><i class="fas fa-phone"></i><span>9960909900</span></a>
+    <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>Aionmalla@gmail.com</span></a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i><span>lalitpur,manbhawon</span></a>
+ </div>
+
+ <div class="box">
+    <a href="home.php"><span>home</span></a>
+    <a href="about.php"><span>about</span></a>
+    <a href="contact.php"><span>contact</span></a>
+    <a href="listings.php"><span>all listings</span></a>
+    <a href="saved.php"><span>saved properties</span></a>
+ </div>
+
+ <div class="box">
+    <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+    <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+    <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+ </div>
+</footer>
+
+    <script src="userHeader.js" ></script>
+    <script src="Jquery.js"></script>
+    
+  </body>
+  <script>
+
+$(document).ready(function(){
+  $('.massege').load('./massegesubmit-view.php');
+})
+  
+  </script>
+  
+</html>

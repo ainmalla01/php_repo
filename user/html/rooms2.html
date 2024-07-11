@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+/* Container for room details */
+.infeterface_rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.details_rooms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+}
+
+/* Each room content */
+.content {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Room image */
+.images {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.imgs {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button styling */
+#book-now-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#book-now-button ion-icon {
+    margin-left: 5px;
+}
+
+/* Styling for other details */
+.other {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .infeterface_rooms {
+        padding: 10px;
+    }
+
+    .content {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+   
+<div class="infeterface_rooms">
+    <div class="details_rooms">
+        <div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+<div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+<div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+<div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+<div class="content">
+            <a class="images" href="">
+                <img src="./rr.jpg" alt="" class='imgs'/>
+            </a>
+            <div class="other">
+                <button id="book-now-button" type='submit' onclick="redirectToBooking('');">
+                    BOOK_NOW
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    const contents = document.querySelectorAll('.content');
+    const others = document.querySelectorAll('.other');
+
+    contents.forEach((img, index) => {
+        img.addEventListener('mouseover', () => {
+            others[index].style.display = 'flex';
+        });
+        img.addEventListener('mouseout', () => {
+            others[index].style.display = 'none';
+        });
+    });
+    function redirectToBooking(roomId) {
+        // Pass the roomId to the booking page
+        window.location.href = 'booking.php?id=' + roomId;
+    }
+</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,200 @@
+.feedbackbox {
+    margin-top: 15vh;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.fixed_box {
+    position: relative;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1em;
+    padding-top:4em;
+}
+
+.fixed_box::-webkit-scrollbar {
+    display: none;
+}
+
+.message_containbox {
+    position: relative;
+    min-height: max-content;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+   
+    gap: 1em;
+}
+
+.card {
+    margin-top: 1em;
+    position: relative;
+    min-height: max-content;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    min-height: 30%;
+    padding: 4px 3px;
+    align-items: center;
+    border-bottom: 1px solid rgb(181, 180, 180);
+    background-color: rgb(88, 115, 115);
+    color: black;
+}
+
+.card span a {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.card span a .img_msg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card span h3 {
+    text-transform: capitalize;
+    font-size: 18px;
+
+}
+
+.card .p {
+    position: relative;
+    width: 100%;
+    height: 58%;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 0.5px;
+}
+
+.card .p p:last-child {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    font-size: 12px;
+    color: aliceblue;
+}
+
+.Msub {
+    width: 80%;
+    height: max-content;
+    position:absolute;
+    left: 10%;
+    bottom: 0%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 20px;
+    height: 9vh;
+    box-shadow: 1px 1px 2px black;
+}
+
+.Msub .input_massege {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 80%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    resize: none;
+}
+
+.Msub button {
+    height: 90%;
+    width: 7vw;
+    border-radius: 30px;
+    border: none;
+    outline: 1px 1px solid black;
+    display: grid;
+    place-content: center;
+}
+
+.Msub button:hover {
+    background-color: rgb(136, 140, 142);
+    box-shadow: 1px 1px 3px black;
+}
+
+.Msub button ion-icon {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.feedback_content {
+    height: max-content;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+    margin: 0;
+}
+
+.feedback_content .web_feedback {
+    height: 20vh;
+    width: 80%;
+    position: relative;
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.09em;
+    box-shadow: 1px 1px 10px black;
+}
+
+.feedback_content .web_feedback .useprofile {
+    height: 8vh;
+    width: 4vw;
+    background-color: rgb(87, 89, 91);
+    border-radius: 50%;
+    position: relative;
+    margin-left: 2em;
+    text-wrap: wrap;
+    box-shadow: 1px 1px 5px rgb(171, 169, 169);
+}
+
+.web_feedback textarea {
+    position: relative;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}

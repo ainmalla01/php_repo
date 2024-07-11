@@ -1,0 +1,82 @@
+.addemployer{
+  position: fixed;
+  top: 15%;
+  right: 10%;
+  height: 5vh;
+  width: 5vw;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(209, 19, 19);
+   font-weight: 900;
+
+}
+.delete{
+  position: fixed;
+  right: 2%;
+  top: 20%;
+}
+.addemployer a{
+color: #ddd;
+ }
+.addemployer:hover{
+  background-color: rgb(214, 67, 67);
+
+}
+.heading_em{
+  border-bottom: 1px solid black;
+  font-size: 30px;
+}
+    .contact-card-grid {
+    
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+  
+}
+.image{
+    position: absolute;
+    left: 3%;
+    bottom: 1%;
+    height: 99%;
+    width: 10%;
+    background-color: aqua;
+    
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+.contact-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-evenly;
+  padding-left: 4em;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.email, .phone {
+  margin-bottom: 10px;
+}
+
+.email:before {
+  content: "\2709"; /* envelope icon */
+  margin-right: 10px;
+}
+
+.phone:before {
+  content: "\260E"; /* phone icon */
+  margin-right: 10px;
+}
+ 

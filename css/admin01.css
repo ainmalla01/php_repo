@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --clr01:rgb(189, 185, 189);
+    --clr02:white;
+    --clr03:rgb(69, 11, 205);
+    --clr04:rgb(182, 187, 189);
+    --clr05:rgb(46, 32, 78);
+    
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:var(--clr01);
+    display: flex;
+    flex-direction:column;
+    gap: 1%;
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    top: 1;
+    height: 8vh;
+    width: 100%;
+    left: 0;
+    background-image: var(--clr01);
+    box-shadow: 0.5px 0.1px 10px rgb(34, 34, 34);
+    z-index: 10;
+}
+header nav{
+    position:relative;
+    height: 100%;
+    width: auto;
+    background-color:transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center ;
+    
+}
+header nav .mainbar{
+    position: absolute;
+    height: 100%;
+    width: 12%;
+    background-color:transparent;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+   
+    
+}
+header nav .mainbar .profile
+,.H1prfile .profile{
+    position: relative;
+    height: 90%;
+    width: 3vw;
+    border-radius: 100%;
+    background-color: aliceblue;
+}
+.H1prfile .profile{
+    background-color: var(--clr02);
+}
+
+.profilepic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* 
+header nav ul{
+    position: relative;
+    height: 90%;
+    width: 95%;
+    background: transparent;
+    display: flex;
+    bottom: 0;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 5px;
+}
+header nav ul li{
+    background-color: rgb(218, 240, 240);
+    height: 6vh;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+header nav ul li:hover{
+    background-color:rgb(131, 137, 137); 
+    transform: translate(6px, 5px) scale(1.1);  
+} */
+
+
+
+/* 
+
+/* .................................main bar................................ */
+
+
+main{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(222, 225, 228);
+    display: flex;
+    flex-direction: row;
+    margin-top: 9vh;
+    position: relative;
+}
+main 
+.lists{
+position:relative;
+left: 0;
+top: 0;
+height: 100%;
+width: 20%;
+background:linear-gradient(rgba(20,20,20,0.2),rgba(20,20,20,0.4));
+display: flex;
+justify-content: center;
+align-items: flex-end;
+overflow-y: scroll;
+overflow-x: hidden;
+box-shadow: 1px 1px 10px rgb(241, 239, 244);
+color: aliceblue;
+
+    
+}
+main 
+.lists::-webkit-scrollbar{
+    display: none;
+}
+main .lists ul{
+    position: relative;
+    height:85vh ;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+
+
+
+.H1prfile{
+    display: flex;
+    position: relative;
+    gap: 1em;
+    height: 9vh;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: 2em;
+    color: aliceblue;
+}
+.H1prfile::after{
+    content: '';
+    width: 0px;
+    height: 4px;
+    position: absolute;
+    background-color: red;
+    bottom: -4px;
+    left: 30%;
+    transition: width 1s linear;
+    
+    
+    
+}
+
+.H1prfile:hover::after {
+   
+    width: 60%;
+}
+
+.H1prfile h3{
+ 
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+main .lists ul li{
+    list-style:none;
+    width: 90%;
+    height: 7vh;
+    background-color: rgb(101, 104, 104);
+    
+    box-shadow: 1px 1px 5px rgb(75, 74, 74);
+    border-radius: 20px;
+    position: relative;
+  
+
+    
+} 
+main .lists ul li a{
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .lists ul li:hover{
+    transform: scale(1.1) translate(2px,5px);
+}
+main .lists ul .logoutbtn{
+    position: absolute;
+    width:7vw;
+    height: 5vh;
+    bottom: 10%;
+    background-color: rgb(217, 217, 222);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 1em;
+    font-weight: 600;
+    
+  
+}
+ul  .logoutbtn{
+height: 4vh;
+}
+main .lists ul .logoutbtn a{
+    color: black;
+}
+main .lists ul .logoutbtn:hover{
+    background-color: rgb(210, 167, 157);
+}
+a{
+    text-decoration: none;
+  
+}
+main .rightbar{
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+main .rightbar .add_now{
+    display: none;
+}
+main .rightbar .add_now .icon{
+visibility: hidden;
+}
+main .rightbar .adding{
+    position: fixed;
+    height:7vh ;
+    width: 7vh;
+    right: 10%;
+    top: 20%;
+    background-color: brown;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 4px rgb(91, 12, 12);
+    z-index: 10;
+    cursor: pointer;
+}
+
+main .rightbar .mainboxes{
+    background-color: transparent;
+    height: 100%;
+    width: 98%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+}
+.mainboxes::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.imgeViewbox{
+    height: 50vh;
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 10;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+.divform{
+    display: none;
+}
+/* form 1 */
+
+.form1{
+    position: absolute;
+    right: 20%;
+    top: 12%;
+    bottom: 30%;
+    background-image: linear-gradient(rgba(55, 11, 11, 1),rgba(45, 6, 58, 1));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    filter: blur(0.9);
+    height: 80%;
+    width: 30vw;
+    color: brown;
+    display: grid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 0.5em;  
+   border-radius: 10%;
+   z-index: 10;
+}
+.form1 .form1_div{
+    
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color:transparent;
+    
+
+}
+.form1 .one input{
+    display: none;
+    
+}
+.form1 .one .cover_image{
+    height:30vh;
+    width: 25vh;
+    opacity: 0.5;
+    box-shadow: 1px 1px 10px black;
+    
+}
+.form1 .one {
+    background-color: transparent;
+}
+.form1 .one .IlB{
+    height: 7VH;
+    width: 15vw;
+    background-color: rgb(67, 40, 92);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    color: aliceblue;
+    margin-right:6em ;
+}
+.form1 .form1_div .label1{
+height: 5vh;
+width: 7vw;
+background-color:transparent;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.form1 .form1_div .label2{
+    
+    display: flex;
+align-items: center;
+justify-content: flex-start;  
+}
+.form1 .two{
+    height: 8vh;
+    width: 27vw;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+}
+.form1 .two span input{
+    height: 5vh;
+    width: 15vw;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+.form1 .submitBtn{
+    height: 7VH;
+    width: 12vw;
+    background-color: rgb(66, 12, 12);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    color: aliceblue;
+}
+
+
+
+
+

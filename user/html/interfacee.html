@@ -1,0 +1,126 @@
+
+    <!--body --------------------------------- -->
+<main id="page">
+  <!-- section 1............................................................. -->
+  <div class="bodypart">
+    <section class="section1">
+      <div class="sec1_content">
+        <h3>welcom to <br>roomnepal</h3>
+        <span> <p>search room as your prefence. this website is made by vedas college student</p></span>
+        <span class="img"><img src="../../pc/houses3d2.png" alt="" srcset="" width="100%" height="100%"></span>
+      </div>
+      <!-- search bar-------------------------------------------------------------------------------- -->
+      <form class="searchbar" action="./search.php" method="post">
+          <div class="inputsearch">
+            <input type="text" placeholder="location" class="search" />
+            <select name="service" id="rooms">
+              <option value="1 room">1 room</option>
+              <option value="2 room">2 room</option>
+              <option value="1 flat">1 flat</option>
+            </select>
+            <select name="" id="">
+              <option value="">acumadation</option>
+              <option value="">office</option>
+            </select>
+          <div class="price">
+            <label for="PRICE_IN">PRICE </label>
+            <input type="number" placeholder="min " class="price_in" id="min_PRICE_IN"name="MinPrice" />
+            <input type="number" placeholder="max "  class="price_in" id="max_PRICE_IN" name="MaxPrice"/>
+          </div>
+            <button type="submit" class="s_btn">search</button>
+          </div>
+        </form>
+    </section>
+<!-- section 2........................................................................... -->
+<!-- section 4 .................................................................................................... -->
+</div>
+</main>
+<!-- 
+<div class="other_contacting_admin">
+<div class="social_m whatsapps"><img src="OIP.jpg" alt="" srcset=""></div>
+<div class="social_m facebook"><img src="OIPFace.jpg" alt="" srcset=""></div>
+</div>
+<div class="support_message">
+<ion-icon name="chatbubble-sharp" ></ion-icon>
+<ion-icon name="close-outline" class="n_active"></ion-icon>
+</div> -->
+
+
+<footer class="footer">
+
+  <section class="flex">
+
+     <div class="box">
+        <a href="tel:1234567890"><i class="fas fa-phone"></i><span>9898988888</span></a>
+        <a href="tel:1112223333"><i class="fas fa-phone"></i><span>9960909900</span></a>
+        <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>Aionmalla@gmail.com</span></a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i><span>lalitpur,manbhawon</span></a>
+     </div>
+
+     <div class="box">
+        <a href="home.php"><span>home</span></a>
+        <a href="about.php"><span>about</span></a>
+        <a href="contact.php"><span>contact</span></a>
+        <a href="listings.php"><span>all listings</span></a>
+        <a href="saved.php"><span>saved properties</span></a>
+     </div>
+
+     <div class="box">
+        <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+        <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+        <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+     </div>
+
+  </section>
+
+  
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../js/userHeader.js" ></script>
+<script src="../../js/Jquery.js" ></script>
+ <script>
+  const support=document.querySelector('.support_message');
+  const admin_help=document.querySelector('.other_contacting_admin');
+  const support_child=document.querySelectorAll('.support_message ion-icon');
+  // support.addEventListener('click',()=>{
+  //   if(support_child[1].classList.contains('n_active')){
+  //   support_child[0].classList.add('n_active');
+  //   support_child[1].classList.remove('n_active');
+  //   support.classList.add('color_support');
+  //   admin_help.style.display='flex';
+
+  //   }
+  //   else{
+  //     support_child[1].classList.add('n_active');
+  //   support_child[0].classList.remove('n_active');
+  //   support.classList.remove('color_support');
+  //   admin_help.style.display='none';
+  //   }
+  // });
+  
+
+    $(document).ready(function(){
+$('.section4').load('../inferface_Aboutus.php');
+    })
+    $(document).ready(function(){
+$('.section2').load('../rooms.php');
+    })
+</script>
+
+</body>
+
+</html>

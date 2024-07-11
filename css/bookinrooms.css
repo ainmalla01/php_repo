@@ -1,0 +1,169 @@
+
+.interface_rooms {
+    position: absolute; 
+    left: 0;
+    top: 20%;
+       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+        max-height: 100vh; /* Set a minimum height */
+        overflow-x:hidden;
+        overflow-y:scroll;
+        box-shadow: 1px 1px 5px rgb(136, 135, 135) ;
+    }
+    .interface_of h2{
+        margin: 10px 5px;
+        height: 10vh;
+        width: 100%;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px black solid;
+    }
+    .interface_of{
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer and Edge */
+    }
+    .interface_of .details_rooms {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 2em;
+        max-width: 100%;
+        justify-content: center; 
+        align-items: center;/* Center child elements horizontally */
+        min-height:max-content;
+        margin-top: 10vh;
+    }
+    
+    /* Each room content */
+    .details_rooms .content {
+        position: relative;
+        width: 20%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height:max-content;
+        border-radius: 10px; /* Adding border-radius */
+        padding: 10px; /* Adding padding for better spacing */
+        box-shadow: 0 0 10px rgba(137, 136, 136, 0.5); /* Adding box shadow for depth effect */
+        gap: 0.1em;;
+       /* Setting text color to white for better contrast */
+    }
+    
+    
+    /* Room image */
+    .details_rooms .content .images {
+        position: relative;
+        display: flex;
+        justify-content: center; /* Center images horizontally */
+        align-items: center; /* Center images vertically */
+        margin-bottom: 5px;
+        height: 20vh; /* Set a fixed height for the image container */
+    }
+    
+    .details_rooms .content .images .imgs {
+        max-width: 100%;
+        max-height: 100%; /* Make sure images don't exceed container height */
+        width: auto; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    
+    /* Button styling */
+    .details_rooms .content .other #book-now-button {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px black;
+    }
+    
+    .details_rooms .content .other #book-now-button ion-icon {
+        margin-left: 5px;
+    }
+    
+    
+    .details_rooms .content .other {
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction:column;
+      margin-top:0.5em;
+      border-radius: 10px;
+      color:black;
+      padding: 20px;
+      transition: display 0.3s ease; 
+      background-color: #222427;/* Adding transition effect */
+    }
+   
+    .otherdetails{
+        position: relative;
+        width:100%;
+        height:10vh;
+        font-size:15px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        text-transform:capitalize;
+         /* Adjust text-transform property as needed */
+        /* Add margin bottom for spacing */
+        box-shadow: 1px 1px 5px black;
+        letter-spacing: 1px; /* Add letter spacing */
+        font-weight:400;
+        color:rgb(20, 19, 19) ;/* Adjust font weight */
+        border: none;
+        padding: none;
+        gap: 0.5em;
+       
+    }
+    .details_rooms .content .otherdetails p{
+       width: 100%;
+     margin: 0;
+     display: grid;
+     place-items: center;
+    }
+    .userotherlist{
+        display: none;
+    }
+     
+      
+    
+    /* Responsive adjustments */
+    @media only screen and (max-width: 768px) {
+        .interface_rooms .details_rooms {
+        width: 100%;
+    
+        flex-direction: column;
+        align-items: center; /* Center child elements horizontally */
+    }
+    
+    
+    
+    
+    .details_rooms .content {
+        position: relative;
+        width: 40%;
+        margin-bottom: 1em;
+        
+       /* Setting text color to white for better contrast */
+    }
+    .otherdetails{
+       
+        font-size:12px;
+    
+       
+    }
+    
+    }
+    
+    @media only screen and (max-width: 576px) {
+      
+    }

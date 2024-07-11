@@ -1,0 +1,157 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20,20,30,0.7),rgba(20,20,30,0.5)),url(../pc/BACK.jpg);
+    filter: blur(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.divform{
+    
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 80%;
+    box-shadow: 1PX 1PX  10PX black;
+    
+}
+.form1{
+    position: relative;
+    display: flex;
+    height: 98%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+   
+    
+}
+
+.firstadding_div {
+    position: relative;
+    height: 40vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+    background-color: transparent;
+}
+
+.firstadding_div::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Align the line to the bottom of the container */
+    left: 0; /* Ensure it starts from the left */
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.form1_div label{
+    position: relative;
+    height: 100%;
+    width: 80%;
+   
+}
+.cover_image{
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    box-shadow: 1px 1px 10px black;
+}
+.form1_div input,.T_in input{
+display: none;
+}
+.small_inf{
+    background-color:transparent;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+.two{
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: aliceblue;
+
+
+}
+.two input{
+
+height: 5vh;
+width: 100%;
+border-radius: 30px;
+padding: 0px 10px;
+}
+.T_in {
+    background-color: rgb(40, 40, 78);
+    width: 10vw;
+    height: 5vh;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    
+}
+.two label{
+    position: relative;
+    background-color:transparent;
+    display: inline-block;
+    width: 7vw;
+    height: 7vh;
+    text-align: center;
+    line-height: 7vh;
+}
+
+.secondadding_div{
+    position: relative;
+    height: 30%;
+    width: 60%;
+    display: grid;
+    place-content: center;
+    background-color: rgba(216, 221, 225, 0.8);
+    box-shadow: 1px 1px 10px black;
+}
+
+.secondadding_div textarea{
+    resize: none;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    background-color: transparent;
+    
+}
+.submitBtn{
+    height: 7VH;
+    width: 7vw;
+    border-radius: 20px;
+    font-size: 20PX;
+    font-weight: 600;
+    background-color: rgb(235, 71, 82);
+    color: rgb(201, 205, 209);
+    border: none;
+    outline: none;
+}
+.submitBtn:hover{
+    background-color:rgb(99, 18, 23); 
+  
+}

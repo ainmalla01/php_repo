@@ -1,0 +1,166 @@
+ 
+
+
+.details{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--clr04);
+    height: max-content;
+    width: 100%;
+    gap: 1em;
+}
+
+.parentdiv {
+    position: relative;
+    background-color: var(--clr04);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: flex-end;
+    align-items: center;
+    height:20vh;
+    width:100%;
+    box-shadow: 3px 3px 5px rgb(116, 113, 113);
+    
+}
+.imagecover{
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    display: grid;
+    place-items: center;
+    box-shadow: 1px 1px 5px black;
+    left: 0;
+    background-color: transparent;
+}
+
+.imagecover img{
+    position:absolute;
+    height:100%;
+    width: 100%;
+
+}
+.imagecover .ImangeBtn{
+    height: 5vh;
+    width: 70%;
+    position:relative;
+    color: whitesmoke;
+    left: 100%;
+    bottom: 25%;
+    background-color: var(--clr05);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgb(228, 225, 225);
+}
+.parentdiv .childs1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    height:90%;
+    width: 16%;
+    box-shadow: 1px 1px 1px black;
+    
+    
+}
+
+
+.parentdiv .childs1 .otherbtn{
+    position: absolute;
+    height: 5vh;
+    width: 15%;
+    bottom: 20%;
+    left: 17%;
+    background-color: var(--clr05);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgb(231, 225, 225);
+    color:whitesmoke;
+}
+.parentdiv .childs1,
+.parentdiv .childs3{
+    text-transform: capitalize;
+    background-color: transparent;
+    color:black;
+}
+.parentdiv .childs1 h1,
+.parentdiv .childs3 h1{
+    margin-bottom: 1em;
+}
+.childs3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    height: 80%;
+    width: 15%;
+    box-shadow: 1px 1px 1px black;
+}
+.childs4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    height: 4vh;
+    width: 10%;
+    border-radius: 10%;
+    background-color: transparent;
+
+}
+.childs1,.childs3,.childs4{
+    margin-left: 1em;
+    margin-top: 0;
+}
+.childs4 button{
+    height: 5vh;
+    width: 7vw;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: var(--clr01);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(31, 30, 30);
+    color:black;
+    margin-right: 1em;
+}
+.childs4 button a{
+    color: black;
+}
+
+.childs4 button:hover,
+.parentdiv .childs1 .otherbtn:hover,
+.imagecover .ImangeBtn:hover{
+opacity: 0.9;
+transform: scale(1.1);
+}
+.parentdiv .childs1 input,
+.childs3 input {
+    height: 4vh;
+    width: 10vw;
+    margin-bottom: 0.5em;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 3px rgb(231, 227, 227);
+    border-radius: 10px;
+}
+
+/* image view box design for other image */
+.imgeViewbox{
+    height: 50vh;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 10;
+    background-color: aliceblue;
+}

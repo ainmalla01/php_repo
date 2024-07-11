@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/interface.css" />
+    <link rel="stylesheet" href="../../css/interfaceSection.css">
+    <link rel="stylesheet" href="../../css/registerloginForm.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+   
+    <link rel="shortcut icon" href="Untitled-1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+  <!-- hearder ........................................................................... -->
+    <header>
+      <!-- logo ..................................................... -->
+      <div class="logo"></div>
+      <!--  other service .................................................... -->
+      <nav>
+        <ul class="list_content">
+          <li class="LI" id="home"><a href="./interfacee.html">home</a></li>
+          <li class="LI" id="service"><a href="./interfaceService.html">service</a></li>
+          <li class="LI" id="feedback"><a href="./interfaceFeedback.html">feedback</a></li>
+        </ul>
+      </nav>
+      <!-- design for login and register........................................... -->
+     
+    </header>
+    <!--body --------------------------------- -->
+<main id="page">
+  <!-- section 1............................................................. -->
+  <div class="bodypart">
+    <section class="section1">
+      <div class="sec1_content">
+        <h3>welcom to <br>roomnepal</h3>
+        <span> <p>search room as your prefence. this website is made by vedas college student</p></span>
+        <span class="img"><img src="houses3d2.png" alt="" srcset="" width="100%" height="100%"></span>
+      </div>
+      <!-- search bar-------------------------------------------------------------------------------- -->
+      <form class="searchbar" action="./search.php" method="post">
+          <div class="inputsearch">
+            <input type="text" placeholder="location" class="search" />
+            <select name="service" id="rooms">
+              <option value="1 room">1 room</option>
+              <option value="2 room">2 room</option>
+              <option value="1 flat">1 flat</option>
+            </select>
+            <select name="" id="">
+              <option value="">acumadation</option>
+              <option value="">office</option>
+            </select>
+          <div class="price">
+            <label for="PRICE_IN">PRICE </label>
+            <input type="number" placeholder="min " class="price_in" id="min_PRICE_IN"name="MinPrice" />
+            <input type="number" placeholder="max "  class="price_in" id="max_PRICE_IN" name="MaxPrice"/>
+          </div>
+            <button type="submit" class="s_btn">search</button>
+          </div>
+        </form>
+    </section>
+<!-- section 2........................................................................... -->
+    <section class="section2 housesec">
+      
+    </section>
+    <!-- section 4 .................................................................................................... -->
+    <section class="section4 housesec">
+      <div class="heading_s">
+        <h3>About</h3>
+        <div class="aboutus">
+
+        </div>
+      </div>
+    </section>
+</div>
+</main>
+<div class="other_contacting_admin">
+  <div class="social_m whatsapps"><img src="OIP.jpg" alt="" srcset=""></div>
+  <div class="social_m facebook"><img src="OIPFace.jpg" alt="" srcset=""></div>
+</div>
+<div class="support_message">
+<ion-icon name="chatbubble-sharp" ></ion-icon>
+<ion-icon name="close-outline" class="n_active"></ion-icon>
+</div>
+
+
+<!-- footer................................................................................................................... -->
+<footer>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+    <script src="userHeader.js" ></script>
+    <script src="Jquery.js" ></script>
+     <script>
+      const support=document.querySelector('.support_message');
+      const admin_help=document.querySelector('.other_contacting_admin');
+      const support_child=document.querySelectorAll('.support_message ion-icon');
+      support.addEventListener('click',()=>{
+        if(support_child[1].classList.contains('n_active')){
+        support_child[0].classList.add('n_active');
+        support_child[1].classList.remove('n_active');
+        support.classList.add('color_support');
+        admin_help.style.display='flex';
+
+        }
+        else{
+          support_child[1].classList.add('n_active');
+        support_child[0].classList.remove('n_active');
+        support.classList.remove('color_support');
+        admin_help.style.display='none';
+        }
+      });
+      
+   
+        $(document).ready(function(){
+    $('.section4').load('./newfolder/inferface_Aboutus.php');
+        })
+    </script>
+    
+  </body>
+  
+</html>

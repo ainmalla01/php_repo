@@ -1,0 +1,51 @@
+.SERVICE{
+    position: relative;
+    display: flex;
+    margin-top: 20vh;
+    background-color: transparent;
+    height: 80VH;
+    width: 100%;
+    align-items: center;
+ 
+    justify-content: center;
+  }
+  .SERVICE .Service_content{
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 80%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+  }
+  .SERVICE .Service_content::-webkit-scrollbar{
+    display: none;
+  }
+  .SERVICE .Service_content .roomservice{
+    display: flex;
+    width: max-content;
+    height: 100%;
+    position: relative;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+
+   
+  }
+  .myroomservice{
+    position: relative;
+    height: 40vh;
+    width: 20vw;
+    box-shadow: 1px 1px 7px black;
+    padding: 5px;
+    background-color: #f6f2f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    overflow: hidden;
+  }
+  

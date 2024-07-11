@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 3, 4, 0.7), rgba(2, 3, 4, 0.6)), url(woodAdmin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body:not(form) {
+    filter: none; /* Remove filter for form elements */
+    opacity: 1;
+}
+.adminlogin{
+    height: 60vh;
+    width: 35vw;
+    background-color: rgba(2, 38, 74, 0.6);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2em;
+    gap: 1em;
+    
+}
+.adminlogin .log{
+    height: 18vh;
+    width: 8vw;
+    border-radius: 50%;
+    position: relative;   
+}
+.adminlogin img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.idpass{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin_IdPass{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    gap: 1em;
+    
+}
+
+.admin_IdPass span{
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.admin_IdPass span input{
+    height: 100%;
+     width: 70%;
+     border-radius: 5em;
+     padding: 0.2em 1em;
+     border: none;
+     outline: none;
+     box-shadow: 1px 1px 5px rgb(133, 132, 132);
+ }
+.admin_IdPass span label{
+    height: 7vh;
+    width: 7vw;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-weight: 600;
+
+}
+.adminlogin .login_forgetpass{
+    position: relative;
+    height: 20%;
+    min-width: 100%;
+    background-color: transparent;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    gap: 0.5em;
+    padding: 3px 5px;
+}
+.adminlogin .login_forgetpass button{
+    height: 7vh;
+    width: 8vw;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.adminlogin .login_forgetpass button:hover{
+    box-shadow: 1px 1px 5px black;
+    transform: scale(1.1);
+}

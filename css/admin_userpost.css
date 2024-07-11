@@ -1,0 +1,117 @@
+
+    .heading{
+        border-bottom: 1px solid black;
+    }
+    .property_box{
+    height:80vh;
+    width: 100%;
+    padding:2em;
+    margin-top:1em;
+    
+}
+	.property-request {
+		position: relative;
+  max-width:25vw ;
+  height: 30vh;
+  margin: 1em auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagediv{
+	position: relative;
+	height:100% ;
+	width: 30%;
+	background-color: #cc0000;
+	border: 1px black solid;
+}
+.imagediv img{
+	height: 100%;
+	width: 100%;
+}
+
+.property-request .person{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	
+	display: flex;
+	gap: 1em;
+	margin-bottom: 1em;
+}
+
+.property-request ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.property-request li {
+  margin-bottom: 10px;
+}
+
+.property-request label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+.property-request span {
+  font-size: 16px;
+}
+.btnofproperty{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	flex-direction: column;
+}
+.view-details {
+position: relative;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  max-width: 80%;
+  max-height: 40%;
+	
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-details:hover {
+  background-color: #3e8e41;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.accept, .reject {
+	position: relative;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.accept:hover, .reject:hover {
+  background-color: #3e8e41;
+}
+
+.reject {
+  background-color: #ff0000;
+}
+
+.reject:hover {
+  background-color: #cc0000;
+}

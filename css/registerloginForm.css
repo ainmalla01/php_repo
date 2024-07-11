@@ -1,0 +1,191 @@
+form {
+  display: none;
+}
+.login{
+  gap: 0.5em;
+}
+.over {
+  overflow: hidden;
+}
+
+/* Register and login */
+.L_data {
+  display: block;
+  height: 50vh;
+  width: 30vw;
+  background-color: rgb(76, 103, 126);
+  position: absolute;
+  left: 40%;
+  right: 30%;
+  top: 10em;
+  border-radius: 15%;
+  border: none;
+  outline: none;
+}
+
+.L_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.finput {
+  margin-top: 10px;
+  height: 2em;
+  width: 70%;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  word-spacing: 1em;
+  display: flex;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
+
+.fbutton {
+  position: absolute;
+  bottom: 5%;
+  height: 2em;
+  width: 10em;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 800;
+  word-spacing: 1em;
+}
+
+.passkey {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  height: 12vh;
+  width: 8vw;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.passkey img {
+  height: 12vh;
+  width: 8vw;
+  border-radius: 50%;
+  outline: 0;
+  border: 0;
+  filter: opacity(100%);
+}
+
+input:focus+.passkey img {
+  display: none;
+}
+
+.bluer {
+  filter: blur(10px);
+}
+
+/* Register */
+.icon {
+  position: absolute;
+  right: 9%;
+  top: 5%;
+  font-size: 25px;
+  font-weight: 900;
+  height: 1em;
+  width: 1em;
+  color: rgb(224, 42, 42);
+  background-color: aliceblue;
+  cursor: pointer;
+
+
+}
+
+#Register div {
+  height: 100%;
+  width: 70%;
+  position: relative;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: -5px;
+  background-color: transparent;
+  
+}
+
+.R_data {
+
+  height: 53vh;
+  width: 30vw;
+  background-color: rgb(76, 103, 126);
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  top: 10em;
+  border-radius: 15%;
+  border: none;
+  outline: none;
+}
+
+.R_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.l_input {
+  margin-top: 2px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  padding-right: 0.5em;
+  padding-left: 2em;
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  word-spacing: 1px;
+  height: 1.5em;
+}
+
+.l_input::placeholder {
+ padding-left: 2em;
+}
+
+.label_t {
+  margin-top: 3px;
+  color: aliceblue;
+  
+}
+
+
+
+.re {
+  position: relative;
+  margin-top: 1em;
+  background-color: rgb(42, 42, 65);
+  color: aliceblue;
+  border-radius: 10px;
+  height: 2em;
+  padding: 1em 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .L_data, .R_data {
+    width: 80vw;
+    left: 10%;
+    right: 10%;
+  }
+}

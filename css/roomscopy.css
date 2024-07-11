@@ -1,0 +1,64 @@
+.infeterface_rooms{
+    position: relative;
+    height: 40vh;
+    width: 80%;
+    overflow-y: hidden;
+    overflow-x: scroll;    
+}
+.infeterface_rooms::-webkit-scrollbar{
+    display: none;
+}
+.infeterface_rooms .details_rooms{
+    position: relative;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.2em;
+    background-color:transparent;
+    padding: 10px;
+
+}
+.infeterface_rooms .details_rooms .content{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.infeterface_rooms .details_rooms .content img{
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    height: 100%;
+    width: 90%;
+}
+.infeterface_rooms .details_rooms .content .other{
+    display: none;
+    position: absolute;
+    width: 90%;
+    bottom: 0%;
+    left:10PX;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    gap: 1em;
+}
+.infeterface_rooms .details_rooms .content .other button{
+    font-size: 18PX;
+    font-weight: 600;
+    height: 6vh;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+}
+.infeterface_rooms .details_rooms .content .other a{
+    text-decoration: none;
+    color: aliceblue;
+}

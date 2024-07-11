@@ -1,0 +1,151 @@
+.Roomnepal_footer{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:white;
+    gap: 1em;
+}
+
+.Roomnepal_footer .Aboutus{
+    height: 99%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color:transparent;
+}
+.Roomnepal_footer .Aboutus .Aboutus_header{
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.Roomnepal_footer .Aboutus .Aboutus_header h3{
+ font-size: 20px;
+ margin-left: 1em;
+ margin-top: 1em;
+}
+.Roomnepal_footer .Aboutus .Aboutus_header .btn{
+    position: relative;
+   
+    height: 5vh;
+    width: 7vw;
+    margin-right: 0.2em;
+}
+.Roomnepal_footer .Aboutus .Aboutus_header .btn button{
+    position: relative;
+height: 100%;
+width: 100%;
+border:none ;
+border-radius: 20px;
+box-shadow: 1px 1px 2px black;
+}
+/*  */
+.Roomnepal_footer .Aboutus  .aboutus_bodypart{
+    min-height: max-content;
+    width: 100%;
+    background-color:transparent;
+    background-color: transparent;
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 10px;
+    gap: 1em;
+    padding-top: 10px;
+    
+}
+.Roomnepal_footer .Aboutus::-webkit-scrollbar{
+    display: none;
+}
+.content_of_aboutus{
+   min-height:34vh ;
+    width: 99%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: 1em;
+    border-radius: 20px;
+    background-color:transparent;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.content_of_aboutus .imgpart{
+position: relative;
+height: 99%;
+width: 20vw;
+
+margin-left: 1em;
+}
+ .content_of_aboutus .imgpart input{
+    display: none;
+}
+ .content_of_aboutus .imgpart label{
+    height: 100%;
+    width: 100%;
+    position:relative;
+   border-radius: 20px;
+    background-color:transparent;
+    
+}
+.content_of_aboutus .imgpart label img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+.content_of_aboutus .textarra_p{
+    position: relative;
+    height: 97%;
+    width: 80%;
+ 
+}
+ .content_of_aboutus .textarra_p .name{
+height: 20%;
+display: flex;
+flex-direction: row;
+width: 100%;
+align-items: center;
+border-bottom: 1px solid black;
+gap: 1.5em;
+padding: 2px 5px;
+text-transform: capitalize;
+}
+ .content_of_aboutus .textarra_p .name input{
+    height: 60%;
+    width: 40%;
+    padding: 2px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+    border-bottom: 1px black solid;
+}
+ .content_of_aboutus .textarra_p textarea{
+  
+width: 100%;
+height: 78%;
+border: none;
+background-color: transparent;
+outline: none;
+resize: none;
+overflow: hidden;
+}
+#delete{
+    height: 4vh;
+    width: 5vw;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(26, 26, 56);
+    color: rgb(221, 219, 214);
+}

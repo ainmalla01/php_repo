@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Register{ 
+  display: block;
+  height: 50vh;
+  width: 30vw;
+  background-color: rgb(76, 103, 126);
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  top: 30%;
+  bottom: 50%;
+  border-radius: 15%;
+  border: none;
+  outline: none;
+}
+.input{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.l_input{
+    margin-top:2px ;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-right: 0.5em;
+    padding-left: 2em;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    word-spacing: 1px;
+    
+}
+.label_t{
+    margin-top: 3px;
+    color: aliceblue;
+}
+.l_input,.label_t{
+    text-transform: capitalize;
+    
+}
+.re{
+    margin-top: 4px;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+    height: 2em;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        
+        
+    </style>
+</head>
+<body>
+    <form action="" class="Register input">
+        <label for="username" class="label_t">username</label>
+        <input type="text" name="username" id="username" class="l_input">
+        <label for="email" class="label_t">email</label>
+        <input type="email" name="email" id="email" class="l_input">
+        <label for="password" class="label_t">password</label>
+        <input type="password" name="password" id="password" class="l_input">
+        <label for="Re-password" class="label_t">ReType password</label>
+        <input type="password" name="Re-password" id="Re-password" class="l_input">
+        <button type="submit" class="re">Register</button>
+      </form>
+</body>
+</html>
+<script>
+ 
+</script>

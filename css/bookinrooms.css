@@ -31,7 +31,7 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        gap: 2em;
+        gap: 7em;
         max-width: 100%;
         justify-content: center; 
         align-items: center;/* Center child elements horizontally */

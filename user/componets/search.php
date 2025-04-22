@@ -1,30 +1,31 @@
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="../css/search.css">
 
 <form class="searchbar" action="./searching.php" method="post">
-        <div class="inputsearch">
-          <input type="text" placeholder="location" class="search-input" name="location" />
-          <select name="service" id="rooms">
-            <option value="" >select room</option>
-            <option value="1 room">
-                        1 room
-                    </option>
-                    <option value="2 room">
-                        2 room
-                    </option>
-                    <option value="1 flat">
-                        1 flat
-                    </option>
-          </select>
-          <select name="type" id="">
-            <option value="">Select type</option>
-            <option value=" home type">acumadation</option>
-            <option value="office type">office</option>
-          </select>
-        <div class="price">
-          <label for="PRICE_IN">PRICE </label>
-          <input type="number" placeholder="min" name="min" class="price_in" id="min_PRICE_IN"name="MinPrice" />
-          <input type="number" placeholder="max"  name="max" class="price_in" id="max_PRICE_IN" name="MaxPrice"/>
-        </div>
-          <button type="submit" class="s_btn">search</button>
-        </div>
+  <div class="search">
+    <div class="location">
+      <label for="location">location</label>
+      <div class="locationtext">
+        <ion-icon name="location"></ion-icon>
+        <input type="text" name="location" id="location" placeholder="Lalitpur" />
+      </div>
+    </div>
+    <div class="price">
+      <label for="location">price</label>
+      <div class="locationtext">
+        <img src="./componets/price.png" alt="" srcset="" class="rs"/>
+        <input type="text" name="location" id="location" placeholder="Min-price" />
+        <img src="./componets/price.png" alt="" srcset="" class="rs"/>
+        <input type="text" name="location" id="location" class="min" placeholder="Max-price" />
+      </div>
+    </div>
+    <div class="searchbtn">
+      <button>
+        search
+      </button>
+    </div>
+  </div>
+      
 </form>
 

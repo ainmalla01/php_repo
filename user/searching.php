@@ -1,25 +1,7 @@
-<?php
-session_start();
-?>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/search1.css">
-    <link rel="stylesheet" href="../css/rooms.css">
 
 
-<?php
-if (isset($_SESSION['username'])) {
-    require "./componets/headerlogin.php";
-} else {
-    require "./componets/header.php";
-}
-
-require "./componets/search.php";
-?>
 
 <!-- ------------------------------------------------------------ -->
-<?php require "adminconection.php"; ?>
 
 <div class="interface_of">
     <div class="details_rooms">

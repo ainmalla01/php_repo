@@ -5,217 +5,61 @@
   --clr2:#9A12DA;
   --clr3:rgba(44,23,65,0.6);
 }
-
-.bodypart{
-  margin-top: 15vh;
-    position: relative;
-    min-height: max-content;
-    width: 100%;
-    display: flex;
-    background-color: transparent;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    scroll-snap-type: inherit;
-    scroll-margin-top: 100px;
-    align-items: center;
-    gap: 1em;
-    /* background-color: rgb(25, 26, 26);
-     */
-     background-color:whitesmoke;
-  }
-  
-  .section1 {
-    position: relative;
-    min-height: max-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline:none;
-    /* background-color: rgb(85, 87, 87); */
-    background-color:whitesmoke;
-  
-  }
-
-.section1 .sec1_content{
-  margin-top: 2vh;
-  background-color:transparent;
+#page{
   position: relative;
-  height:60vh;
-  width: 98%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  color: black;
-  margin-bottom: 0px;
-}
-.section1 .sec1_content .text{
-  background-color:transparent;
-  position: relative;
-  height: 100%;
-  width: 50%;
+  min-height: max-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 1em;
+  align-items: center;
+
+}
+.video{
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.video video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;     
+  filter: blur(2px) opacity(90%);
+  
+  z-index: -1;  
+
+}
+.home_dis {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  height: 40vh;
+  width: 50vw;
+  z-index: 1;
   font-size: 50px;
-  justify-content: center;
+  font-weight: 900;
+  display: flex;
   align-items: center;
-  text-transform: capitalize;
-  z-index: 10;
-  
-
-}
-.section1 .sec1_content .text h2{
-  position: relative;
-  margin-right: 1.5em;
-  width: 50%;
   justify-content: center;
-  align-items: flex-start;
-  font-size: 30px;
-}
-.section1 .sec1_content .text h1{
-  margin-right: 1em;
-  text-transform: uppercase;
+  border-radius: 1rem;
  
 }
-.section1 .sec1_content .text p{
-  font-family: "Open Sans", sans-serif;
-  text-transform: capitalize;
-  position: relative;
-  font-size: 15px;
-  width: 60%;
-  flex-wrap: wrap;
-
-  
-
+.home_dis h1{
+  text-shadow: 1px 1px 2px black;
 }
-.section1 .sec1_content .img{
-  z-index: 0;
-  background:transparent;
-  position: relative;
-  right: 5%;
-  height: 100%;
-  width: 30vw;
-  transition: 3S;
-
-}
-
-.section1 .sec1_content .img img{
-  height: 100%;
-  width: 100%;
-}
-/* .show_search{
-  position: relative;
-  width: 100%;
-  height: 10vh;
-  background-color: #722d8b;
-} */
-.search{
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
- .searchbar{
-  display: none;
-  background-color: transparent;
-  height: 4vh;
-  width: 85%;
+.home_dis p{
+  line-height: 2;
   margin-top: 2em;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  position: relative;
-  border: 1px solid black;
-  border-radius: 20PX;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.searchbar .inputsearch{
-  background-color:transparent;
-  height: 7vh;
-  width:100%;
-  justify-content: center;
-  padding: 0px 5px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  border-radius: 20PX;
-  gap: 0.5em;
-} .searchbar .inputsearch .search{
-  height: 99%;
-  border: none;
-  outline: none;
-  width: 50%;
-  color: rgb(35, 35, 36);
-  margin-left: 0.2em;
- text-align: center;
- 
- padding-left: 10px;
- padding-right: 15px;
- background-color:transparent;
- border-radius: 20px;
-
-
-} 
-.searchbar .inputsearch .price{
-  position: relative;
-  background-color:transparent;
-  box-shadow: 1px 1px 2px black;
-  height: 80%;
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  color: rgb(12, 12, 12);
-  align-items: center;
-  justify-content: space-around;
-  gap: 0.5em;
-  outline: none;
+@media (max-width: 768px) {
+  .home_dis {
+    font-size: 40px; /* Adjust font size on smaller screens */
+    width: 80vw; /* Make it more responsive on smaller screens */
+  }
 }
- .searchbar .inputsearch .s_btn{
-  height: 90%;
-  width: 7vw;
-  position: relative;
-  border: none;
-  padding-right: 10PX;
-  outline: none;
-  text-transform: capitalize;
-  letter-spacing: 1PX;
-  border-top-right-radius: 10PX;
-  border-bottom-right-radius: 10PX;
-}
- .searchbar .inputsearch select{
-height: 80%;
-width: max-content;
-font-size: 15px;
-border: none;
-color: rgb(12, 12, 12);
-background-color: transparent;
-box-shadow: 1px 1px 2px black;
-text-transform: uppercase;
-
-}
- .searchbar .inputsearch select option{
-  background-color: #d9d1dc;
-  height: 20vh;
-
-}
- .searchbar .inputsearch .price .price_in{
-  height: 80%;
-  width: 5vw;
-}
-
- .searchbar .inputsearch .s_btn:hover{
-  background-color: rgb(167, 158, 169);
-}
-
-
-
-
-
 
 
 

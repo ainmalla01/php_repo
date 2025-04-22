@@ -1,0 +1,123 @@
+.home_section {
+    position: relative;
+    height: 70vh;
+    width: 90%;
+    background-color: rgba(145, 189, 221, 0.4);
+    border-radius: 2em;
+    display: grid;
+    margin: 3em auto;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    /* Adds spacing between grid items */
+    align-items: center; /* Optional: aligns items vertically */
+    justify-items: center;
+}
+
+
+/* Each .home box should take 22% width (25% - some gap), to fit 4 in a row */
+
+
+.home {
+    position: relative;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgba(108, 106, 106,0.2);
+    /* background-color: blueviolet; */
+    overflow: hidden; /* <== Add this */
+    box-sizing: border-box; /* <== Include padding and border in size */
+    border-radius: 1em;
+    gap: 0.5em;
+}
+.home:hover{
+    box-shadow: 1px 1px 10px black;
+}
+.home_img {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+.home_img img {
+    /* margin: 0; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Optional for better scaling */
+}
+
+.amount{
+    /* background-color: brown; */
+    background-color: #ee6565;
+    position: relative;
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em 0em;
+}
+.See_more{
+    position: absolute;
+    bottom: -15%;
+    left: 40%;
+    height: 7vh;
+    min-width: auto;
+    padding: 1em 2em;
+    border-radius: 20px;
+    background-color: #3276a7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ a{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    text-transform: capitalize;
+}
+
+.seemorelink{
+    height: 100%;
+    width: 100%;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    transition: 1s;
+    transition: display 0.3s ease;
+
+}
+.seemorelink h3{
+    letter-spacing: 0.1em;
+}
+
+.seemorelink ion-icon {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* On hover: show icon and increase space */
+.seemorelink:hover {
+    gap: 1.5em; /* increase the space between elements */
+    
+}
+.seemorelink:hover .See_more{
+    background-color: #85bbe1;
+    color: rgb(139, 142, 145);
+}
+.seemorelink:hover ion-icon {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}

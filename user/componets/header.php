@@ -25,9 +25,9 @@
         </div>
         <ul class="list_content">
           <li class="LI" id="home"><a href="./index.php">home</a></li>
-          <li class="LI" id="service"><a href="./userinterfaceService.php">service</a></li>
-          <li class="LI" id="feedback"><a href="./userinterfaceFeedback.php">contact</a></li>
-          <li class="LI" id="feedback"><a href="./inferface_Aboutus.php">Aboutus</a></li>
+          <li class="LI" id="service"><a href="./userinterfaceService.php">land</a></li>
+          <li class="LI" id="feedback"><a href="./userinterfaceFeedback.php">house</a></li>
+          <li class="LI" id="feedback"><a href="./inferface_Aboutus.php">contact</a></li>
           <li class="LI" id="feedback"><a href="./addingNewroom.php">POST </a></li>
         </ul>
         <div class="content">

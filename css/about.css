@@ -1,0 +1,59 @@
+.about_us{
+    margin-top: 10vh;
+    height: 70vh;
+    width: 90%;
+    background-color: rgba(150, 176, 222,0.3);
+    display: flex;
+    position: relative;
+    padding: 2em;
+    border-radius: 2em;
+    
+
+}
+.aboutus_ciontent {
+    height: 82%;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    justify-content: center;
+    z-index: 1;
+   
+
+}
+.aboutus_ciontent .abouts_text{
+    min-height: max-content;
+    width: 70%;
+    background-color: transparent;
+    box-shadow: -1px 1px 5px -1px black;
+    padding: 1em;
+    gap: 2em;
+}
+.aboutus_ciontent .abouts_text h1{
+    text-transform: capitalize;
+    padding-left:15% ;
+   
+}
+.aboutus_ciontent .abouts_text p{
+    display: flex;
+    text-wrap: wrap;
+    word-spacing: 0.2em;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+.Aboutus_pic{
+    height: 90%;
+    width: 50%;
+    position: relative;
+    background-color: aqua;
+    
+    
+}
+.Aboutus_pic img{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
